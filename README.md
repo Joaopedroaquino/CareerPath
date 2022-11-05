@@ -18,10 +18,19 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Tecnologias
+<div class="row">
+  <div class="column">
   <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="ts logo" width="50" height="50"/> 
+  </div>
+  <div class="column">
 
   <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="ts logo" width="50" height="50"/>
+  </div>
+    <div class="column">
+
  <img src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="nest Logo" width="50" height="50"/>
+ </div>
+ </div>
 
 
 
