@@ -23,6 +23,9 @@
   <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="ts logo" width="50" height="50"  float: left;
   width: 33.33%;
   padding: 5px;/> 
+   <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="ts logo" width="50" height="50"  float: left;
+  width: 33.33%;
+  padding: 5px;/> 
   </div>
 
 
