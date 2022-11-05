@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { DataSource } from 'typeorm';
 import { EmployeeModule } from './modules/employee/employee.module';
 import { UserModule } from './modules/user/user.module';
+import { DatabaseModule } from './shared/modules/database/database.module';
 
 @Module({
   imports: [
@@ -20,8 +22,13 @@ import { UserModule } from './modules/user/user.module';
 
   ),
     EmployeeModule,
-    UserModule,],
+    UserModule,
+    DatabaseModule,],
   controllers: [],
   providers: [],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private dataSource: DataSource) {
+    console.log(__dirname)
+  }
+}
