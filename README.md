@@ -17,6 +17,13 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Tecnologias
+  <img alt="nest" src="" />
+  <img alt="ts" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png"/>
+  <img alt="pg" src="https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png"/>
+  <img alt="docker" src="https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png"/>
+  <img alt="typeorm" src=""/>
+
 ## Installation
 
 ```bash
