@@ -20,15 +20,21 @@
 ## Tecnologias
 <div class="row">
   <div class="column">
-  <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="ts logo" width="50" height="50"/> 
+  <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="ts logo" width="50" height="50"  float: left;
+  width: 33.33%;
+  padding: 5px;/> 
   </div>
   <div class="column">
 
-  <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="ts logo" width="50" height="50"/>
+  <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="ts logo" width="50" height="50"  float: left;
+  width: 33.33%;
+  padding: 5px;/>
   </div>
     <div class="column">
 
- <img src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="nest Logo" width="50" height="50"/>
+ <img src="https://cdn.worldvectorlogo.com/logos/nestjs.svg" alt="nest Logo" width="50" height="50"  float: left;
+  width: 33.33%;
+  padding: 5px;/>
  </div>
  </div>
 
