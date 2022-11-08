@@ -1,17 +1,30 @@
-import { Controller, Get } from "@nestjs/common";
+import { Controller, Get, Res } from "@nestjs/common";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
 import { IReturnEmployeeDTO } from "../contracts/dto/IReturnEmployeeDTO";
+import { ListEmployeeUseCase } from "../usecase/listEmployee/listEmployeeUseCase";
 
 @ApiTags('Employee')
 @Controller('employee')
 export class EmployeeRouter{
-    constructor(){}
+    constructor(
+        private listEmployeeUseCase : ListEmployeeUseCase,
 
-    @ApiResponse({type: IReturnEmployeeDTO})
+    ){}
+
+    @ApiResponse({ type: IReturnEmployeeDTO})
     @Get()
-    public async getAll(){
-        return {}
+    public async list(
+        
+    ): Promise<IReturnEmployeeDTO> {
+        const res = await this.listEmployeeUseCase.execute()
+
+        return
+    }
+        
+
+
+        
     }
 
    
-}
+
