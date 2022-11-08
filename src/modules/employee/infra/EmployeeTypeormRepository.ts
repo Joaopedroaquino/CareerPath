@@ -7,9 +7,9 @@ import { IEmployeeRepository } from "../contracts/repositories/IEmployeeReposito
 @Injectable()
 export class EmployeeTypeORMrepository implements IEmployeeRepository {
     private ormRepository: Repository<Employee>
-    public async list(): Promise<Employee[]> {
+    public async list(): Promise<IReturnEmployeeDTO[]> {
         const employee = await this.ormRepository.find()
-        return employee
+        return 
     }
     
 }

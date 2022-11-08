@@ -1,4 +1,4 @@
-import { Controller, Get, Res } from "@nestjs/common";
+import { Controller, Get, Query, Res } from "@nestjs/common";
 import { ApiResponse, ApiTags } from "@nestjs/swagger";
 import { IReturnEmployeeDTO } from "../contracts/dto/IReturnEmployeeDTO";
 import { ListEmployeeUseCase } from "../usecase/listEmployee/listEmployeeUseCase";
@@ -14,11 +14,14 @@ export class EmployeeRouter{
     @ApiResponse({ type: IReturnEmployeeDTO})
     @Get()
     public async list(
-        
-    ): Promise<IReturnEmployeeDTO> {
-        const res = await this.listEmployeeUseCase.execute()
+        @Res() response: IReturnEmployeeDTO,
+        @Query() employee: IReturnEmployeeDTO
 
-        return
+        
+    ): Promise<IReturnEmployeeDTO[]> {
+        const res = await this.listEmployeeUseCase.execute(employee)
+        
+        return res
     }
         
 

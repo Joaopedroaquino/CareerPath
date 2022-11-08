@@ -10,7 +10,7 @@ export class ListEmployeeUseCase {
         private employeeRepository: IEmployeeRepository,
     ) { }
 
-    public async execute(): Promise<Employee[]> {
-        return await this.employeeRepository.list();
+    public async execute(employee: IReturnEmployeeDTO): Promise<IReturnEmployeeDTO[]> {
+        return await this.employeeRepository.list(employee);
     }
 }
